@@ -2,6 +2,10 @@
   "name": "somenewst",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "v14.16.0",
+    "npm":"6.14.11"
+  },
   "main": "nodeSw.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -22,7 +22,7 @@ io.on('connection', function (socket) { // Burada input-output kısmına connect
 });
 
 
-const port = 3000; // Serverimizin dinleyeceği portu söylüyoruz.
+const port = process.env.PORT || 3000; // Serverimizin dinleyeceği portu söylüyoruz.
 server.listen(port, () => { // Bizim kurduğumuz server yapısının kapısının ismini bir üst satırda söylediğimiz porttan dinlemesini söylüyoruz.
     console.log('Server is listening on:' + port + ' now...'); // Dinlediğinin kanıtı olarak ekrana yazdırıyoruz.
 });
